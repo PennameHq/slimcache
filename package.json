@@ -1,0 +1,45 @@
+{
+	"name": "@penname/slimcache",
+	"version": "0.0.1",
+	"description": "A convenient, slim cache manager.",
+	"main": "index.js",
+	"scripts": {
+		"test": "nyc --reporter=cobertura mocha",
+		"test:ci": "nyc --reporter=cobertura mocha --forbid-only"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/PennameHq/slimcache.git"
+	},
+	"keywords": [
+		"redis",
+		"cache"
+	],
+	"author": "Penname.me",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/PennameHq/slimcache/issues"
+	},
+	"homepage": "https://github.com/PennameHq/slimcache#readme",
+	"dependencies": {
+		"cache-manager": "^3.4.0",
+		"cache-manager-redis-store": "^2.0.0",
+		"redis-scanner": "^0.1.1"
+	},
+	"devDependencies": {
+		"chai": "^4.2.0",
+		"deep-set": "^1.0.1",
+		"mocha": "^8.2.1",
+		"mongodb-memory-server": "^6.9.2",
+		"nyc": "^15.1.0",
+		"on-change": "^2.2.0",
+		"prettier": "^2.2.1",
+		"ramda": "^0.27.1",
+		"sinon": "^9.2.1",
+		"sinon-test": "^3.0.0"
+	},
+	"directories": {
+		"lib": "lib",
+		"test": "test"
+	}
+}
